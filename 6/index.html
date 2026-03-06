@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peso Ideal</title>
+    <link rel="stylesheet" href="assets/estilo.css">
+</head>
+<body>
+    <header></header>
+
+    <main class="container">
+        <div class="card">
+            <h3>Cálculo de Peso Ideal</h3>
+            <input type="number" step="0.01" id="altura" placeholder="Altura (ex: 1.75)">
+            <select id="sexo">
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
+            </select>
+            <button onclick="calcularPeso()">Calcular Peso</button>
+            <div id="res6" class="result"></div>
+        </div>
+
+    <script src="assets/funcionalidade.js"></script>
+</body>
+</html>
