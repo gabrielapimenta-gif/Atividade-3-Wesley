@@ -1,32 +1,61 @@
 * {
+    box-sizing: border-box; 
     font-size: 16px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-div {
-    margin: 1rem auto;
-    border: .2rem solid #ccc;
-    width: 15rem;
-    padding: .5rem;
-    box-shadow: .5rem .5rem .3rem .3rem #ddd;
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 2rem auto; 
+    padding: 0 1rem;
+}
+
+.cartao {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-top: 5px solid hsl(210, 92%, 15%);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    justify-content: space-between; 
 }
 
 img {
     width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
 }
 
 button {
     width: 100%;
+    max-width: 200px;
+    padding: 10px;
     border: none;
     background-color: blue;
     color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: auto; 
+}
+
+button:hover {
+    background-color: darkblue;
 }
 
 #link {
-    text-align: center;
+    margin-top: 1rem;
 }
 
 a {
     text-decoration: none;
     color: blue;
+    font-weight: bold;
 }
